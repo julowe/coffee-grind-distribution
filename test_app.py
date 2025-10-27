@@ -7,12 +7,12 @@ import sys
 import os
 
 def test_app_imports():
-    """Test that the app can be imported without GUI dependencies"""
+    """Test that the app.py file has valid Python syntax"""
     # Add current directory to path
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     
     # Try to parse the app file for syntax errors
-    with open('app.py', 'r') as f:
+    with open('app.py', 'r', encoding='utf-8') as f:
         code = f.read()
         try:
             compile(code, 'app.py', 'exec')
@@ -44,7 +44,7 @@ def test_required_files():
 
 def test_readme_content():
     """Test that README has been updated with download instructions"""
-    with open('README.md', 'r') as f:
+    with open('README.md', 'r', encoding='utf-8') as f:
         content = f.read()
         
     checks = [

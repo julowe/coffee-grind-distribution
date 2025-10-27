@@ -130,7 +130,7 @@ class CoffeeGrindApp:
             readme_filename = "README.md"
             
             # Save CSV (placeholder data)
-            with open(os.path.join(folder_path, csv_filename), 'w') as f:
+            with open(os.path.join(folder_path, csv_filename), 'w', encoding='utf-8') as f:
                 f.write("diameter_mm,count\n")
                 f.write("0.5,10\n")
                 f.write("0.75,25\n")
@@ -139,7 +139,7 @@ class CoffeeGrindApp:
                 f.write("1.5,45\n")
             
             # Save stats (placeholder data)
-            with open(os.path.join(folder_path, stats_filename), 'w') as f:
+            with open(os.path.join(folder_path, stats_filename), 'w', encoding='utf-8') as f:
                 f.write("metric,value\n")
                 f.write("average_diameter_mm,1.25\n")
                 f.write("std_deviation,0.55\n")
@@ -147,7 +147,7 @@ class CoffeeGrindApp:
                 f.write(f"grinder,{grinder}\n")
             
             # Save README
-            with open(os.path.join(folder_path, readme_filename), 'w') as f:
+            with open(os.path.join(folder_path, readme_filename), 'w', encoding='utf-8') as f:
                 f.write(f"# Coffee Grind Distribution Data\n\n")
                 f.write(f"**Grinder:** {grinder}\n")
                 f.write(f"**Username:** {username}\n")
