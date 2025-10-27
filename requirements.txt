@@ -1,0 +1,3 @@
+# Core dependencies for the Coffee Grind Distribution Analyzer
+# Using only standard library modules to keep it simple and lightweight
+# No external dependencies required for basic functionality
